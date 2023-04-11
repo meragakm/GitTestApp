@@ -4,13 +4,12 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 namespace GitTestApp.Controllers
 {
    [Route("product")]
-   [ApiController]
-   public class ProductController : ControllerBase
+   public class ProductController : Controller
    {
-      [HttpGet]
-      public ActionResult index()
+      [HttpGet("buy")]
+      public ActionResult buy()
       {
-         return Ok(1);
+         return View();
       }
 
    }
